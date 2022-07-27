@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_78b14cbcc83241d09050a42cc70528dd {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_78b14cbcc83241d09050a42cc70528dd" ></div>
+        
+</body>
+<script>    
+    
+            var map_78b14cbcc83241d09050a42cc70528dd = L.map(
+                "map_78b14cbcc83241d09050a42cc70528dd",
+                {
+                    center: [37.09024, -90.712891],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_93b46c91466943e4be8fa880d606501a = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_78b14cbcc83241d09050a42cc70528dd);
+        
+    
+            var marker_27bb87ccd67e4a72a0e2686533d8de2d = L.marker(
+                [40.76820373535156, -111.9010238647461],
+                {}
+            ).addTo(map_78b14cbcc83241d09050a42cc70528dd);
+        
+    
+            var icon_cd8f4e7c39d440c6bad277a53ca8b825 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "trophy", "iconColor": "#FFFFFF", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_27bb87ccd67e4a72a0e2686533d8de2d.setIcon(icon_cd8f4e7c39d440c6bad277a53ca8b825);
+        
+    
+        var popup_d43b27b1c9f54c3db81626809534de9d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_92cedb0fa31c4e4988f3bf02a39160b9 = $(`<div id="html_92cedb0fa31c4e4988f3bf02a39160b9" style="width: 100.0%; height: 100.0%;">Drużyna: Utah Jazz,<br>Rok powstania: 1974,<br>Rok likwidacji: still exist,<br>Zakończyli na miejscu: 1st</div>`)[0];
+            popup_d43b27b1c9f54c3db81626809534de9d.setContent(html_92cedb0fa31c4e4988f3bf02a39160b9);
+        
+
+        marker_27bb87ccd67e4a72a0e2686533d8de2d.bindPopup(popup_d43b27b1c9f54c3db81626809534de9d)
+        ;
+
+        
+    
+    
+            marker_27bb87ccd67e4a72a0e2686533d8de2d.bindTooltip(
+                `<div>
+                     Miasto: Salt Lake City,<br>Kliknij, aby uzyskać więcej informacji
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bf9c91981ea042fdb367c3848a7e5db4 = L.marker(
+                [33.44582748413086, -112.07121276855469],
+                {}
+            ).addTo(map_78b14cbcc83241d09050a42cc70528dd);
+        
+    
+            var icon_fe874673be5b4a8fac9c3f45005f8320 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "#FFFFFF", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_bf9c91981ea042fdb367c3848a7e5db4.setIcon(icon_fe874673be5b4a8fac9c3f45005f8320);
+        
+    
+        var popup_9b56e15e7480496e8b99d3e84f5b8e61 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2f4f9456e41a499a954a9668876fcaa5 = $(`<div id="html_2f4f9456e41a499a954a9668876fcaa5" style="width: 100.0%; height: 100.0%;">Drużyna: Phoenix Suns,<br>Rok powstania: 1968,<br>Rok likwidacji: still exist,<br>Zakończyli na miejscu: 2nd</div>`)[0];
+            popup_9b56e15e7480496e8b99d3e84f5b8e61.setContent(html_2f4f9456e41a499a954a9668876fcaa5);
+        
+
+        marker_bf9c91981ea042fdb367c3848a7e5db4.bindPopup(popup_9b56e15e7480496e8b99d3e84f5b8e61)
+        ;
+
+        
+    
+    
+            marker_bf9c91981ea042fdb367c3848a7e5db4.bindTooltip(
+                `<div>
+                     Miasto: Phoenix,<br>Kliknij, aby uzyskać więcej informacji
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_00154a996470430db0170c73ba4bf220 = L.marker(
+                [39.90119171142578, -75.17195892333984],
+                {}
+            ).addTo(map_78b14cbcc83241d09050a42cc70528dd);
+        
+    
+            var icon_a9f1f93d6d4a429cae505da1b5d3812d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "#FFFFFF", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_00154a996470430db0170c73ba4bf220.setIcon(icon_a9f1f93d6d4a429cae505da1b5d3812d);
+        
+    
+        var popup_aaf8b45545d24084b9b2c042a34cda15 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d1a7657ea94f44f5ab1e735b088e9e46 = $(`<div id="html_d1a7657ea94f44f5ab1e735b088e9e46" style="width: 100.0%; height: 100.0%;">Drużyna: Philadelphia 76ers,<br>Rok powstania: 1963,<br>Rok likwidacji: still exist,<br>Zakończyli na miejscu: 3rd</div>`)[0];
+            popup_aaf8b45545d24084b9b2c042a34cda15.setContent(html_d1a7657ea94f44f5ab1e735b088e9e46);
+        
+
+        marker_00154a996470430db0170c73ba4bf220.bindPopup(popup_aaf8b45545d24084b9b2c042a34cda15)
+        ;
+
+        
+    
+    
+            marker_00154a996470430db0170c73ba4bf220.bindTooltip(
+                `<div>
+                     Miasto: Philadelphia,<br>Kliknij, aby uzyskać więcej informacji
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_96e8ff7ccd9c4ff0804ad7882907bed7 = L.marker(
+                [40.68261079999999, -73.975279],
+                {}
+            ).addTo(map_78b14cbcc83241d09050a42cc70528dd);
+        
+    
+            var icon_946afcb2e00a4d22a0c0e6999de173c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "#FFFFFF", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_96e8ff7ccd9c4ff0804ad7882907bed7.setIcon(icon_946afcb2e00a4d22a0c0e6999de173c4);
+        
+    
+        var popup_fe3002a7ee9e484c9c4fcfbf043a216c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7e2834c2d9de41f5b39cf9f5af736d23 = $(`<div id="html_7e2834c2d9de41f5b39cf9f5af736d23" style="width: 100.0%; height: 100.0%;">Drużyna: Brooklyn Nets,<br>Rok powstania: 1967,<br>Rok likwidacji: still exist,<br>Zakończyli na miejscu: 4th</div>`)[0];
+            popup_fe3002a7ee9e484c9c4fcfbf043a216c.setContent(html_7e2834c2d9de41f5b39cf9f5af736d23);
+        
+
+        marker_96e8ff7ccd9c4ff0804ad7882907bed7.bindPopup(popup_fe3002a7ee9e484c9c4fcfbf043a216c)
+        ;
+
+        
+    
+    
+            marker_96e8ff7ccd9c4ff0804ad7882907bed7.bindTooltip(
+                `<div>
+                     Miasto: New York,<br>Kliknij, aby uzyskać więcej informacji
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2982e14effdc459d92da4a3b1cf77a38 = L.marker(
+                [39.7486838, -105.007544],
+                {}
+            ).addTo(map_78b14cbcc83241d09050a42cc70528dd);
+        
+    
+            var icon_a96db21ef9e141808314f550afa78a44 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "#FFFFFF", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_2982e14effdc459d92da4a3b1cf77a38.setIcon(icon_a96db21ef9e141808314f550afa78a44);
+        
+    
+        var popup_7c7f2bd054cc4ad3a329b0499af2829b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d76f891c22214e9f92e20153d9f16546 = $(`<div id="html_d76f891c22214e9f92e20153d9f16546" style="width: 100.0%; height: 100.0%;">Drużyna: Denver Nuggets,<br>Rok powstania: 1967,<br>Rok likwidacji: still exist,<br>Zakończyli na miejscu: 5th</div>`)[0];
+            popup_7c7f2bd054cc4ad3a329b0499af2829b.setContent(html_d76f891c22214e9f92e20153d9f16546);
+        
+
+        marker_2982e14effdc459d92da4a3b1cf77a38.bindPopup(popup_7c7f2bd054cc4ad3a329b0499af2829b)
+        ;
+
+        
+    
+    
+            marker_2982e14effdc459d92da4a3b1cf77a38.bindTooltip(
+                `<div>
+                     Miasto: Denver,<br>Kliknij, aby uzyskać więcej informacji
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_78f88c29b89c41b892ff043d5bfbe633 = L.marker(
+                [34.0430046, -118.26705259999999],
+                {}
+            ).addTo(map_78b14cbcc83241d09050a42cc70528dd);
+        
+    
+            var icon_321c17b7372e444fa750c6a672475210 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "#FFFFFF", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_78f88c29b89c41b892ff043d5bfbe633.setIcon(icon_321c17b7372e444fa750c6a672475210);
+        
+    
+        var popup_bcd7a7a4c833402087e8041cfadc6da6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_603709fbe6e841c4843578e94a0e6739 = $(`<div id="html_603709fbe6e841c4843578e94a0e6739" style="width: 100.0%; height: 100.0%;">Drużyna: Los Angeles Clippers,<br>Rok powstania: 1970,<br>Rok likwidacji: still exist,<br>Zakończyli na miejscu: 6th</div>`)[0];
+            popup_bcd7a7a4c833402087e8041cfadc6da6.setContent(html_603709fbe6e841c4843578e94a0e6739);
+        
+
+        marker_78f88c29b89c41b892ff043d5bfbe633.bindPopup(popup_bcd7a7a4c833402087e8041cfadc6da6)
+        ;
+
+        
+    
+    
+            marker_78f88c29b89c41b892ff043d5bfbe633.bindTooltip(
+                `<div>
+                     Miasto: Los Angeles,<br>Kliknij, aby uzyskać więcej informacji
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_18ad88c7f2f74780b8243eae5f3349a3 = L.marker(
+                [43.0450096, -87.91748709999999],
+                {}
+            ).addTo(map_78b14cbcc83241d09050a42cc70528dd);
+        
+    
+            var icon_4fb9a385f933497d9b655cb9f9af6b01 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "#FFFFFF", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_18ad88c7f2f74780b8243eae5f3349a3.setIcon(icon_4fb9a385f933497d9b655cb9f9af6b01);
+        
+    
+        var popup_470c223f26e2484b887fa3def8b5b742 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_887cef88d34849bfa8e37bf987e78fa7 = $(`<div id="html_887cef88d34849bfa8e37bf987e78fa7" style="width: 100.0%; height: 100.0%;">Drużyna: Milwaukee Bucks,<br>Rok powstania: 1968,<br>Rok likwidacji: still exist,<br>Zakończyli na miejscu: 7th</div>`)[0];
+            popup_470c223f26e2484b887fa3def8b5b742.setContent(html_887cef88d34849bfa8e37bf987e78fa7);
+        
+
+        marker_18ad88c7f2f74780b8243eae5f3349a3.bindPopup(popup_470c223f26e2484b887fa3def8b5b742)
+        ;
+
+        
+    
+    
+            marker_18ad88c7f2f74780b8243eae5f3349a3.bindTooltip(
+                `<div>
+                     Miasto: Milwaukee,<br>Kliknij, aby uzyskać więcej informacji
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a9d481ecefc94cd596a587c520479c35 = L.marker(
+                [32.79045867919922, -96.8103256225586],
+                {}
+            ).addTo(map_78b14cbcc83241d09050a42cc70528dd);
+        
+    
+            var icon_162267e32254467193d00d3518fbbc53 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "#FFFFFF", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_a9d481ecefc94cd596a587c520479c35.setIcon(icon_162267e32254467193d00d3518fbbc53);
+        
+    
+        var popup_93c13c040f294ddc87508393ea0863a8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4ae6caa674db42558d04a3c8c8e2a2df = $(`<div id="html_4ae6caa674db42558d04a3c8c8e2a2df" style="width: 100.0%; height: 100.0%;">Drużyna: Dallas Mavericks,<br>Rok powstania: 1980,<br>Rok likwidacji: still exist,<br>Zakończyli na miejscu: 8th</div>`)[0];
+            popup_93c13c040f294ddc87508393ea0863a8.setContent(html_4ae6caa674db42558d04a3c8c8e2a2df);
+        
+
+        marker_a9d481ecefc94cd596a587c520479c35.bindPopup(popup_93c13c040f294ddc87508393ea0863a8)
+        ;
+
+        
+    
+    
+            marker_a9d481ecefc94cd596a587c520479c35.bindTooltip(
+                `<div>
+                     Miasto: Dallas,<br>Kliknij, aby uzyskać więcej informacji
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_884715542eb6493fb1100347a316ef72 = L.marker(
+                [34.0536909, -118.24276599999999],
+                {}
+            ).addTo(map_78b14cbcc83241d09050a42cc70528dd);
+        
+    
+            var icon_0926f2dc0caf4279b4a741dc3d8bac3d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "#FFFFFF", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_884715542eb6493fb1100347a316ef72.setIcon(icon_0926f2dc0caf4279b4a741dc3d8bac3d);
+        
+    
+        var popup_ff4030a984d74b93ae8e2c59d6bdb271 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8e02bbf5fee94110a65c5a1f09a55e3d = $(`<div id="html_8e02bbf5fee94110a65c5a1f09a55e3d" style="width: 100.0%; height: 100.0%;">Drużyna: Los Angeles Lakers,<br>Rok powstania: 1947,<br>Rok likwidacji: still exist,<br>Zakończyli na miejscu: 9th</div>`)[0];
+            popup_ff4030a984d74b93ae8e2c59d6bdb271.setContent(html_8e02bbf5fee94110a65c5a1f09a55e3d);
+        
+
+        marker_884715542eb6493fb1100347a316ef72.bindPopup(popup_ff4030a984d74b93ae8e2c59d6bdb271)
+        ;
+
+        
+    
+    
+            marker_884715542eb6493fb1100347a316ef72.bindTooltip(
+                `<div>
+                     Miasto: Los Angeles,<br>Kliknij, aby uzyskać więcej informacji
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7d7ed5a42f694ab79c6b83303042e14b = L.marker(
+                [45.531578700000004, -122.66683370000001],
+                {}
+            ).addTo(map_78b14cbcc83241d09050a42cc70528dd);
+        
+    
+            var icon_9c27df51b3934a5c8b3e90c754a2b317 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "#FFFFFF", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_7d7ed5a42f694ab79c6b83303042e14b.setIcon(icon_9c27df51b3934a5c8b3e90c754a2b317);
+        
+    
+        var popup_b4aa9349abdc420391a66eddfcb731e8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e14ac0ff3475400b84751bae36f9506c = $(`<div id="html_e14ac0ff3475400b84751bae36f9506c" style="width: 100.0%; height: 100.0%;">Drużyna: Portland Trail Blazers,<br>Rok powstania: 1970,<br>Rok likwidacji: still exist,<br>Zakończyli na miejscu: 10th</div>`)[0];
+            popup_b4aa9349abdc420391a66eddfcb731e8.setContent(html_e14ac0ff3475400b84751bae36f9506c);
+        
+
+        marker_7d7ed5a42f694ab79c6b83303042e14b.bindPopup(popup_b4aa9349abdc420391a66eddfcb731e8)
+        ;
+
+        
+    
+    
+            marker_7d7ed5a42f694ab79c6b83303042e14b.bindTooltip(
+                `<div>
+                     Miasto: Portland,<br>Kliknij, aby uzyskać więcej informacji
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_da7a85886ca848eeb0b92d98fc8d53d8 = L.marker(
+                [33.7573698, -84.39638479999999],
+                {}
+            ).addTo(map_78b14cbcc83241d09050a42cc70528dd);
+        
+    
+            var icon_cd0a5e03dd3a4dab8d631701900396ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "#FFFFFF", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_da7a85886ca848eeb0b92d98fc8d53d8.setIcon(icon_cd0a5e03dd3a4dab8d631701900396ca);
+        
+    
+        var popup_7e37f0949ee34c96a81544584584c79e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7ba5aa1d5f5b4c7a96c950cfb9de8d12 = $(`<div id="html_7ba5aa1d5f5b4c7a96c950cfb9de8d12" style="width: 100.0%; height: 100.0%;">Drużyna: Atlanta Hawks,<br>Rok powstania: 1946,<br>Rok likwidacji: still exist,<br>Zakończyli na miejscu: 11th</div>`)[0];
+            popup_7e37f0949ee34c96a81544584584c79e.setContent(html_7ba5aa1d5f5b4c7a96c950cfb9de8d12);
+        
+
+        marker_da7a85886ca848eeb0b92d98fc8d53d8.bindPopup(popup_7e37f0949ee34c96a81544584584c79e)
+        ;
+
+        
+    
+    
+            marker_da7a85886ca848eeb0b92d98fc8d53d8.bindTooltip(
+                `<div>
+                     Miasto: Atlanta,<br>Kliknij, aby uzyskać więcej informacji
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6f0f7d28b961472e9b971ae7a109bde9 = L.marker(
+                [40.7505247, -73.99355030000001],
+                {}
+            ).addTo(map_78b14cbcc83241d09050a42cc70528dd);
+        
+    
+            var icon_4dda5fd56b324243afbd6215422392dd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "#FFFFFF", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_6f0f7d28b961472e9b971ae7a109bde9.setIcon(icon_4dda5fd56b324243afbd6215422392dd);
+        
+    
+        var popup_117eb64d882a414b88e084a892f11b23 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_436e4a370cc54743a9f031b19ae92598 = $(`<div id="html_436e4a370cc54743a9f031b19ae92598" style="width: 100.0%; height: 100.0%;">Drużyna: New York Knicks,<br>Rok powstania: 1946,<br>Rok likwidacji: still exist,<br>Zakończyli na miejscu: 12th</div>`)[0];
+            popup_117eb64d882a414b88e084a892f11b23.setContent(html_436e4a370cc54743a9f031b19ae92598);
+        
+
+        marker_6f0f7d28b961472e9b971ae7a109bde9.bindPopup(popup_117eb64d882a414b88e084a892f11b23)
+        ;
+
+        
+    
+    
+            marker_6f0f7d28b961472e9b971ae7a109bde9.bindTooltip(
+                `<div>
+                     Miasto: New York,<br>Kliknij, aby uzyskać więcej informacji
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_75b77da851334824862c331a6b5d480c = L.marker(
+                [25.781391143798828, -80.18782806396484],
+                {}
+            ).addTo(map_78b14cbcc83241d09050a42cc70528dd);
+        
+    
+            var icon_4af8fdb6b1404713a815843327f020f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "#FFFFFF", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_75b77da851334824862c331a6b5d480c.setIcon(icon_4af8fdb6b1404713a815843327f020f8);
+        
+    
+        var popup_f7dbaada8a2749f5b0b55983957cca83 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_220352ed931b4f768b5bf2c03d540cd8 = $(`<div id="html_220352ed931b4f768b5bf2c03d540cd8" style="width: 100.0%; height: 100.0%;">Drużyna: Miami Heat,<br>Rok powstania: 1988,<br>Rok likwidacji: still exist,<br>Zakończyli na miejscu: 13th</div>`)[0];
+            popup_f7dbaada8a2749f5b0b55983957cca83.setContent(html_220352ed931b4f768b5bf2c03d540cd8);
+        
+
+        marker_75b77da851334824862c331a6b5d480c.bindPopup(popup_f7dbaada8a2749f5b0b55983957cca83)
+        ;
+
+        
+    
+    
+            marker_75b77da851334824862c331a6b5d480c.bindTooltip(
+                `<div>
+                     Miasto: Miami,<br>Kliknij, aby uzyskać więcej informacji
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7365b5251b904c4b9ed3ed0cf344f7c7 = L.marker(
+                [37.767892700000004, -122.3874072],
+                {}
+            ).addTo(map_78b14cbcc83241d09050a42cc70528dd);
+        
+    
+            var icon_814ab4bd288c431ca1276652ee113e13 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "#FFFFFF", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_7365b5251b904c4b9ed3ed0cf344f7c7.setIcon(icon_814ab4bd288c431ca1276652ee113e13);
+        
+    
+        var popup_ad7486502c8b44dd83bcd446d6607db8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fc7af1440de94998a574fd76c142b420 = $(`<div id="html_fc7af1440de94998a574fd76c142b420" style="width: 100.0%; height: 100.0%;">Drużyna: Golden State Warriors,<br>Rok powstania: 1946,<br>Rok likwidacji: still exist,<br>Zakończyli na miejscu: 14th</div>`)[0];
+            popup_ad7486502c8b44dd83bcd446d6607db8.setContent(html_fc7af1440de94998a574fd76c142b420);
+        
+
+        marker_7365b5251b904c4b9ed3ed0cf344f7c7.bindPopup(popup_ad7486502c8b44dd83bcd446d6607db8)
+        ;
+
+        
+    
+    
+            marker_7365b5251b904c4b9ed3ed0cf344f7c7.bindTooltip(
+                `<div>
+                     Miasto: San Fancisco,<br>Kliknij, aby uzyskać więcej informacji
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_db324ddbe73a49aea242e2d686112c56 = L.marker(
+                [35.1377966, -90.0516243],
+                {}
+            ).addTo(map_78b14cbcc83241d09050a42cc70528dd);
+        
+    
+            var icon_c904b8c539be46c38c3a2c619e65b361 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "#FFFFFF", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_db324ddbe73a49aea242e2d686112c56.setIcon(icon_c904b8c539be46c38c3a2c619e65b361);
+        
+    
+        var popup_ca199f38d68f49aa9506f1d3eb4b9616 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1f7efe13f8e946d58cc381d966098b91 = $(`<div id="html_1f7efe13f8e946d58cc381d966098b91" style="width: 100.0%; height: 100.0%;">Drużyna: Memphis Grizzlies,<br>Rok powstania: 1995,<br>Rok likwidacji: still exist,<br>Zakończyli na miejscu: 15th</div>`)[0];
+            popup_ca199f38d68f49aa9506f1d3eb4b9616.setContent(html_1f7efe13f8e946d58cc381d966098b91);
+        
+
+        marker_db324ddbe73a49aea242e2d686112c56.bindPopup(popup_ca199f38d68f49aa9506f1d3eb4b9616)
+        ;
+
+        
+    
+    
+            marker_db324ddbe73a49aea242e2d686112c56.bindTooltip(
+                `<div>
+                     Miasto: Memphis,<br>Kliknij, aby uzyskać więcej informacji
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3d50600b028c4a7f9a9aecf5f49da563 = L.marker(
+                [42.3662986, -71.0621607],
+                {}
+            ).addTo(map_78b14cbcc83241d09050a42cc70528dd);
+        
+    
+            var icon_8f929a1a1d65498bb8505dbd2995fcb8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "#FFFFFF", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_3d50600b028c4a7f9a9aecf5f49da563.setIcon(icon_8f929a1a1d65498bb8505dbd2995fcb8);
+        
+    
+        var popup_6f5a7cb9f0bf47f99f89fe15066c9935 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a7c9ec5e4efb4c919b10a4c2d4b785ab = $(`<div id="html_a7c9ec5e4efb4c919b10a4c2d4b785ab" style="width: 100.0%; height: 100.0%;">Drużyna: Boston Celtics,<br>Rok powstania: 1946,<br>Rok likwidacji: still exist,<br>Zakończyli na miejscu: 16th</div>`)[0];
+            popup_6f5a7cb9f0bf47f99f89fe15066c9935.setContent(html_a7c9ec5e4efb4c919b10a4c2d4b785ab);
+        
+
+        marker_3d50600b028c4a7f9a9aecf5f49da563.bindPopup(popup_6f5a7cb9f0bf47f99f89fe15066c9935)
+        ;
+
+        
+    
+    
+            marker_3d50600b028c4a7f9a9aecf5f49da563.bindTooltip(
+                `<div>
+                     Miasto: Boston,<br>Kliknij, aby uzyskać więcej informacji
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_065138724a3642238bf14ae7807fcfbb = L.marker(
+                [38.8981835, -77.0209382],
+                {}
+            ).addTo(map_78b14cbcc83241d09050a42cc70528dd);
+        
+    
+            var icon_e92d636d1ad145a286085e19b942eb1c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "#FFFFFF", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_065138724a3642238bf14ae7807fcfbb.setIcon(icon_e92d636d1ad145a286085e19b942eb1c);
+        
+    
+        var popup_6bde219ab48d47539b4615ff22adabfa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3752ae32376f4d568ab6de2043974ce7 = $(`<div id="html_3752ae32376f4d568ab6de2043974ce7" style="width: 100.0%; height: 100.0%;">Drużyna: Washington Wizards,<br>Rok powstania: 1961,<br>Rok likwidacji: still exist,<br>Zakończyli na miejscu: 17th</div>`)[0];
+            popup_6bde219ab48d47539b4615ff22adabfa.setContent(html_3752ae32376f4d568ab6de2043974ce7);
+        
+
+        marker_065138724a3642238bf14ae7807fcfbb.bindPopup(popup_6bde219ab48d47539b4615ff22adabfa)
+        ;
+
+        
+    
+    
+            marker_065138724a3642238bf14ae7807fcfbb.bindTooltip(
+                `<div>
+                     Miasto: Washington D.C.,<br>Kliknij, aby uzyskać więcej informacji
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1c765563504643ed88a468c952bdd834 = L.marker(
+                [39.76404190063477, -86.15547180175781],
+                {}
+            ).addTo(map_78b14cbcc83241d09050a42cc70528dd);
+        
+    
+            var icon_c8ced16804e14166b32cb6fe46ec9bf6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "#FFFFFF", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_1c765563504643ed88a468c952bdd834.setIcon(icon_c8ced16804e14166b32cb6fe46ec9bf6);
+        
+    
+        var popup_c2718daf5199436b9f0d7e7d2c6d809c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_737eddd894654135b9ccedafcdda4817 = $(`<div id="html_737eddd894654135b9ccedafcdda4817" style="width: 100.0%; height: 100.0%;">Drużyna: Indiana Pacers,<br>Rok powstania: 1967,<br>Rok likwidacji: still exist,<br>Zakończyli na miejscu: 18th</div>`)[0];
+            popup_c2718daf5199436b9f0d7e7d2c6d809c.setContent(html_737eddd894654135b9ccedafcdda4817);
+        
+
+        marker_1c765563504643ed88a468c952bdd834.bindPopup(popup_c2718daf5199436b9f0d7e7d2c6d809c)
+        ;
+
+        
+    
+    
+            marker_1c765563504643ed88a468c952bdd834.bindTooltip(
+                `<div>
+                     Miasto: Indianapolis,<br>Kliknij, aby uzyskać więcej informacji
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_46546cd85cd5421d919ea695db976078 = L.marker(
+                [35.22511291503906, -80.83927917480469],
+                {}
+            ).addTo(map_78b14cbcc83241d09050a42cc70528dd);
+        
+    
+            var icon_617551a2ad1546fc85990f3aa252cda0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "#FFFFFF", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_46546cd85cd5421d919ea695db976078.setIcon(icon_617551a2ad1546fc85990f3aa252cda0);
+        
+    
+        var popup_c4734b303e3f46d3b61653a4b75258be = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0a720f24c6514ff396f07f2e50c5b8cd = $(`<div id="html_0a720f24c6514ff396f07f2e50c5b8cd" style="width: 100.0%; height: 100.0%;">Drużyna: Charlotte Hornets,<br>Rok powstania: 1988,<br>Rok likwidacji: still exist,<br>Zakończyli na miejscu: 19th</div>`)[0];
+            popup_c4734b303e3f46d3b61653a4b75258be.setContent(html_0a720f24c6514ff396f07f2e50c5b8cd);
+        
+
+        marker_46546cd85cd5421d919ea695db976078.bindPopup(popup_c4734b303e3f46d3b61653a4b75258be)
+        ;
+
+        
+    
+    
+            marker_46546cd85cd5421d919ea695db976078.bindTooltip(
+                `<div>
+                     Miasto: Charlotte,<br>Kliknij, aby uzyskać więcej informacji
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c676af2acc0248428a7382b24026b158 = L.marker(
+                [29.427050399999995, -98.4375071],
+                {}
+            ).addTo(map_78b14cbcc83241d09050a42cc70528dd);
+        
+    
+            var icon_c0d70467c04540f5964398266f7c2fb2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "#FFFFFF", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_c676af2acc0248428a7382b24026b158.setIcon(icon_c0d70467c04540f5964398266f7c2fb2);
+        
+    
+        var popup_875d859f6fa64fe9b63bd2c598040039 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_359de125ab82400ba765f24301e6fe71 = $(`<div id="html_359de125ab82400ba765f24301e6fe71" style="width: 100.0%; height: 100.0%;">Drużyna: San Antonio Spurs,<br>Rok powstania: 1967,<br>Rok likwidacji: still exist,<br>Zakończyli na miejscu: 20th</div>`)[0];
+            popup_875d859f6fa64fe9b63bd2c598040039.setContent(html_359de125ab82400ba765f24301e6fe71);
+        
+
+        marker_c676af2acc0248428a7382b24026b158.bindPopup(popup_875d859f6fa64fe9b63bd2c598040039)
+        ;
+
+        
+    
+    
+            marker_c676af2acc0248428a7382b24026b158.bindTooltip(
+                `<div>
+                     Miasto: San Antonio,<br>Kliknij, aby uzyskać więcej informacji
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e5bbe8192b0e41589e193c7829545ac2 = L.marker(
+                [41.8806831, -87.67418509999999],
+                {}
+            ).addTo(map_78b14cbcc83241d09050a42cc70528dd);
+        
+    
+            var icon_484b39f335384884acf28d1584605a01 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "#FFFFFF", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_e5bbe8192b0e41589e193c7829545ac2.setIcon(icon_484b39f335384884acf28d1584605a01);
+        
+    
+        var popup_67ac4e48d8bb41698efd7214803203ec = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a5709eda53da4941904e2acee3dda736 = $(`<div id="html_a5709eda53da4941904e2acee3dda736" style="width: 100.0%; height: 100.0%;">Drużyna: Chicago Bulls,<br>Rok powstania: 1966,<br>Rok likwidacji: still exist,<br>Zakończyli na miejscu: 21th</div>`)[0];
+            popup_67ac4e48d8bb41698efd7214803203ec.setContent(html_a5709eda53da4941904e2acee3dda736);
+        
+
+        marker_e5bbe8192b0e41589e193c7829545ac2.bindPopup(popup_67ac4e48d8bb41698efd7214803203ec)
+        ;
+
+        
+    
+    
+            marker_e5bbe8192b0e41589e193c7829545ac2.bindTooltip(
+                `<div>
+                     Miasto: Chicago,<br>Kliknij, aby uzyskać więcej informacji
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_409053a205844044b896d880f74918ad = L.marker(
+                [29.94900894165039, -90.08209991455078],
+                {}
+            ).addTo(map_78b14cbcc83241d09050a42cc70528dd);
+        
+    
+            var icon_ae29683180b44b2e8375add4e1a01435 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "#FFFFFF", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_409053a205844044b896d880f74918ad.setIcon(icon_ae29683180b44b2e8375add4e1a01435);
+        
+    
+        var popup_5b6dc0081156469399523a1472a86749 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_72200d25f2ff4272b5b0f1a60e68fc55 = $(`<div id="html_72200d25f2ff4272b5b0f1a60e68fc55" style="width: 100.0%; height: 100.0%;">Drużyna: New Orleans Pelicans,<br>Rok powstania: 2002,<br>Rok likwidacji: still exist,<br>Zakończyli na miejscu: 22th</div>`)[0];
+            popup_5b6dc0081156469399523a1472a86749.setContent(html_72200d25f2ff4272b5b0f1a60e68fc55);
+        
+
+        marker_409053a205844044b896d880f74918ad.bindPopup(popup_5b6dc0081156469399523a1472a86749)
+        ;
+
+        
+    
+    
+            marker_409053a205844044b896d880f74918ad.bindTooltip(
+                `<div>
+                     Miasto: New Orleans,<br>Kliknij, aby uzyskać więcej informacji
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_73b1904e91bb46608d24fc517174f954 = L.marker(
+                [38.580140500000006, -121.49950079999999],
+                {}
+            ).addTo(map_78b14cbcc83241d09050a42cc70528dd);
+        
+    
+            var icon_161861be8ae24b54a73c668f48dd86a0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "#FFFFFF", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_73b1904e91bb46608d24fc517174f954.setIcon(icon_161861be8ae24b54a73c668f48dd86a0);
+        
+    
+        var popup_b6052514ca284083a56be88353862f79 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_35691ec4da34470f9cd2dc036a0551c9 = $(`<div id="html_35691ec4da34470f9cd2dc036a0551c9" style="width: 100.0%; height: 100.0%;">Drużyna: Sacramento Kings,<br>Rok powstania: 1945,<br>Rok likwidacji: still exist,<br>Zakończyli na miejscu: 23th</div>`)[0];
+            popup_b6052514ca284083a56be88353862f79.setContent(html_35691ec4da34470f9cd2dc036a0551c9);
+        
+
+        marker_73b1904e91bb46608d24fc517174f954.bindPopup(popup_b6052514ca284083a56be88353862f79)
+        ;
+
+        
+    
+    
+            marker_73b1904e91bb46608d24fc517174f954.bindTooltip(
+                `<div>
+                     Miasto: Sacramento,<br>Kliknij, aby uzyskać więcej informacji
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_28d155b2454f440b87dd008eacaa8786 = L.marker(
+                [43.6434299, -79.3790595],
+                {}
+            ).addTo(map_78b14cbcc83241d09050a42cc70528dd);
+        
+    
+            var icon_277f130a9ed94d4d847c65cd1d08301d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "#FFFFFF", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_28d155b2454f440b87dd008eacaa8786.setIcon(icon_277f130a9ed94d4d847c65cd1d08301d);
+        
+    
+        var popup_68fcad39ab504dbea65d3c9c90cc75d2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bea243793bd84f669e5eeb476fa8ba2c = $(`<div id="html_bea243793bd84f669e5eeb476fa8ba2c" style="width: 100.0%; height: 100.0%;">Drużyna: Toronto Raptors,<br>Rok powstania: 1995,<br>Rok likwidacji: still exist,<br>Zakończyli na miejscu: 24th</div>`)[0];
+            popup_68fcad39ab504dbea65d3c9c90cc75d2.setContent(html_bea243793bd84f669e5eeb476fa8ba2c);
+        
+
+        marker_28d155b2454f440b87dd008eacaa8786.bindPopup(popup_68fcad39ab504dbea65d3c9c90cc75d2)
+        ;
+
+        
+    
+    
+            marker_28d155b2454f440b87dd008eacaa8786.bindTooltip(
+                `<div>
+                     Miasto: Toronto,<br>Kliknij, aby uzyskać więcej informacji
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9bb303bb08e54364831c568ef533f181 = L.marker(
+                [44.9795127, -93.276095],
+                {}
+            ).addTo(map_78b14cbcc83241d09050a42cc70528dd);
+        
+    
+            var icon_814a944f57a24eae8519f22e245162c3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "#FFFFFF", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_9bb303bb08e54364831c568ef533f181.setIcon(icon_814a944f57a24eae8519f22e245162c3);
+        
+    
+        var popup_11b956b2b55e4d119c4e2ba78e7e4670 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1a6d8e7946c849278860ef967cc481c7 = $(`<div id="html_1a6d8e7946c849278860ef967cc481c7" style="width: 100.0%; height: 100.0%;">Drużyna: Minnesota Timberwolves,<br>Rok powstania: 1989,<br>Rok likwidacji: still exist,<br>Zakończyli na miejscu: 25th</div>`)[0];
+            popup_11b956b2b55e4d119c4e2ba78e7e4670.setContent(html_1a6d8e7946c849278860ef967cc481c7);
+        
+
+        marker_9bb303bb08e54364831c568ef533f181.bindPopup(popup_11b956b2b55e4d119c4e2ba78e7e4670)
+        ;
+
+        
+    
+    
+            marker_9bb303bb08e54364831c568ef533f181.bindTooltip(
+                `<div>
+                     Miasto: Minneapolis,<br>Kliknij, aby uzyskać więcej informacji
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1a9e8c0ecf974e17a1d5348d216ad51b = L.marker(
+                [41.49661254882813, -81.6881332397461],
+                {}
+            ).addTo(map_78b14cbcc83241d09050a42cc70528dd);
+        
+    
+            var icon_530a2c61d7f94a86b2d1311115273098 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "#FFFFFF", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_1a9e8c0ecf974e17a1d5348d216ad51b.setIcon(icon_530a2c61d7f94a86b2d1311115273098);
+        
+    
+        var popup_fb4a72bee1394014a817c3986e3ac9ed = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8ae1cfb6604a4dd09d14624d19de0ffb = $(`<div id="html_8ae1cfb6604a4dd09d14624d19de0ffb" style="width: 100.0%; height: 100.0%;">Drużyna: Cleveland Cavaliers,<br>Rok powstania: 1970,<br>Rok likwidacji: still exist,<br>Zakończyli na miejscu: 26th</div>`)[0];
+            popup_fb4a72bee1394014a817c3986e3ac9ed.setContent(html_8ae1cfb6604a4dd09d14624d19de0ffb);
+        
+
+        marker_1a9e8c0ecf974e17a1d5348d216ad51b.bindPopup(popup_fb4a72bee1394014a817c3986e3ac9ed)
+        ;
+
+        
+    
+    
+            marker_1a9e8c0ecf974e17a1d5348d216ad51b.bindTooltip(
+                `<div>
+                     Miasto: Cleveland,<br>Kliknij, aby uzyskać więcej informacji
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_48dcec56ba4a4334bc4bbce8d9b4bca3 = L.marker(
+                [35.46342086791992, -97.51506805419922],
+                {}
+            ).addTo(map_78b14cbcc83241d09050a42cc70528dd);
+        
+    
+            var icon_6c8deae806294422b721fdc13ddd1839 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "#FFFFFF", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_48dcec56ba4a4334bc4bbce8d9b4bca3.setIcon(icon_6c8deae806294422b721fdc13ddd1839);
+        
+    
+        var popup_1b2d740c1c4f499bbd5cf435b17914ce = L.popup({"maxWidth": "100%"});
+
+        
+            var html_70bb955bf21846c0b41ff87620338428 = $(`<div id="html_70bb955bf21846c0b41ff87620338428" style="width: 100.0%; height: 100.0%;">Drużyna: Oklahoma City Thunder,<br>Rok powstania: 2008,<br>Rok likwidacji: still exist,<br>Zakończyli na miejscu: 27th</div>`)[0];
+            popup_1b2d740c1c4f499bbd5cf435b17914ce.setContent(html_70bb955bf21846c0b41ff87620338428);
+        
+
+        marker_48dcec56ba4a4334bc4bbce8d9b4bca3.bindPopup(popup_1b2d740c1c4f499bbd5cf435b17914ce)
+        ;
+
+        
+    
+    
+            marker_48dcec56ba4a4334bc4bbce8d9b4bca3.bindTooltip(
+                `<div>
+                     Miasto: Oklahoma City,<br>Kliknij, aby uzyskać więcej informacji
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e2a8dc6f1202456aba627cbf0db01a9b = L.marker(
+                [28.5392739, -81.3840071],
+                {}
+            ).addTo(map_78b14cbcc83241d09050a42cc70528dd);
+        
+    
+            var icon_923e60c3a8d74eeda46f571f1181b976 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "#FFFFFF", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_e2a8dc6f1202456aba627cbf0db01a9b.setIcon(icon_923e60c3a8d74eeda46f571f1181b976);
+        
+    
+        var popup_58402c8af69c4e95a2794617c78bc93f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2d5cc58145694e2fa67b8404c067c8b0 = $(`<div id="html_2d5cc58145694e2fa67b8404c067c8b0" style="width: 100.0%; height: 100.0%;">Drużyna: Orlando magic,<br>Rok powstania: 1989,<br>Rok likwidacji: still exist,<br>Zakończyli na miejscu: 28th</div>`)[0];
+            popup_58402c8af69c4e95a2794617c78bc93f.setContent(html_2d5cc58145694e2fa67b8404c067c8b0);
+        
+
+        marker_e2a8dc6f1202456aba627cbf0db01a9b.bindPopup(popup_58402c8af69c4e95a2794617c78bc93f)
+        ;
+
+        
+    
+    
+            marker_e2a8dc6f1202456aba627cbf0db01a9b.bindTooltip(
+                `<div>
+                     Miasto: Orlando,<br>Kliknij, aby uzyskać więcej informacji
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_481820fa80e74c9f859f5b3ff37c9a18 = L.marker(
+                [42.3410530090332, -83.05521392822266],
+                {}
+            ).addTo(map_78b14cbcc83241d09050a42cc70528dd);
+        
+    
+            var icon_92a360a482ad42358236abef45a15ef7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "#FFFFFF", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_481820fa80e74c9f859f5b3ff37c9a18.setIcon(icon_92a360a482ad42358236abef45a15ef7);
+        
+    
+        var popup_54bf2ee03b154fc08f2432343660a94d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_de0caac92d5c4dedbd4026a0d6dd6692 = $(`<div id="html_de0caac92d5c4dedbd4026a0d6dd6692" style="width: 100.0%; height: 100.0%;">Drużyna: Detroit Pistons,<br>Rok powstania: 1948,<br>Rok likwidacji: still exist,<br>Zakończyli na miejscu: 29th</div>`)[0];
+            popup_54bf2ee03b154fc08f2432343660a94d.setContent(html_de0caac92d5c4dedbd4026a0d6dd6692);
+        
+
+        marker_481820fa80e74c9f859f5b3ff37c9a18.bindPopup(popup_54bf2ee03b154fc08f2432343660a94d)
+        ;
+
+        
+    
+    
+            marker_481820fa80e74c9f859f5b3ff37c9a18.bindTooltip(
+                `<div>
+                     Miasto: Detroit,<br>Kliknij, aby uzyskać więcej informacji
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9f1199b27ac14d3a86fe419977bf4a94 = L.marker(
+                [29.7507472, -95.3622315],
+                {}
+            ).addTo(map_78b14cbcc83241d09050a42cc70528dd);
+        
+    
+            var icon_ae0550a7ad4a47228a350475510405ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "#FFFFFF", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_9f1199b27ac14d3a86fe419977bf4a94.setIcon(icon_ae0550a7ad4a47228a350475510405ac);
+        
+    
+        var popup_35a5a0c039cf47cc9bc0001fadbe35c2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2845b3f0e7d941d184eb812d1f336ba5 = $(`<div id="html_2845b3f0e7d941d184eb812d1f336ba5" style="width: 100.0%; height: 100.0%;">Drużyna: Houston Rockets,<br>Rok powstania: 1967,<br>Rok likwidacji: still exist,<br>Zakończyli na miejscu: 30th</div>`)[0];
+            popup_35a5a0c039cf47cc9bc0001fadbe35c2.setContent(html_2845b3f0e7d941d184eb812d1f336ba5);
+        
+
+        marker_9f1199b27ac14d3a86fe419977bf4a94.bindPopup(popup_35a5a0c039cf47cc9bc0001fadbe35c2)
+        ;
+
+        
+    
+    
+            marker_9f1199b27ac14d3a86fe419977bf4a94.bindTooltip(
+                `<div>
+                     Miasto: Houston,<br>Kliknij, aby uzyskać więcej informacji
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c233582c193349f2b43e9aa122755794 = L.marker(
+                [36.0, -70.0],
+                {}
+            ).addTo(map_78b14cbcc83241d09050a42cc70528dd);
+        
+    
+            var div_icon_099b5215138b4bd99ad79e014ff55edb = L.divIcon({"className": "empty", "html": "\u003csvg height=\"105\" width=\"230\"\u003e\u003ctext x=\"10\" y=\"30\" font-size=25px font-style=\"italic\" fill=\"black\"\u003eMapa miast z\u003c/text\u003e\u003ctext x=\"10\" y=\"55\" font-size=25px font-style=\"italic\" fill=\"black\"\u003edru\u017cynami w\u003c/text\u003e\u003ctext x=\"10\" y=\"80\" font-size=25px font-style=\"italic\" fill=\"black\"\u003esezonie 2020-2021\u003c/text\u003e\u003c/svg\u003e"});
+            marker_c233582c193349f2b43e9aa122755794.setIcon(div_icon_099b5215138b4bd99ad79e014ff55edb);
+        
+</script>

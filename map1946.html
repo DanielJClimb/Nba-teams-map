@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_070eebcbdd4f4e1f9758139b87ad42cc {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_070eebcbdd4f4e1f9758139b87ad42cc" ></div>
+        
+</body>
+<script>    
+    
+            var map_070eebcbdd4f4e1f9758139b87ad42cc = L.map(
+                "map_070eebcbdd4f4e1f9758139b87ad42cc",
+                {
+                    center: [37.09024, -90.712891],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4f21e71b7a6640e18c4eb3004c8aff13 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_070eebcbdd4f4e1f9758139b87ad42cc);
+        
+    
+            var marker_77f78a27d40e4b2b81be5b57394bb876 = L.marker(
+                [42.358990000000006, -71.05863000000001],
+                {}
+            ).addTo(map_070eebcbdd4f4e1f9758139b87ad42cc);
+        
+    
+            var icon_283501fc6e9740d994d1bde14c351ba6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "#FFFFFF", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_77f78a27d40e4b2b81be5b57394bb876.setIcon(icon_283501fc6e9740d994d1bde14c351ba6);
+        
+    
+        var popup_dffd2ee5839c4bcb818590afc209ac22 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_baa2307fcbd5422283ac297ef4103612 = $(`<div id="html_baa2307fcbd5422283ac297ef4103612" style="width: 100.0%; height: 100.0%;">Drużyna: Boston Celtics,<br>Rok powstania: 1946,<br>Rok likwidacji: still exist,<br>Zakończyli na miejscu: 8th</div>`)[0];
+            popup_dffd2ee5839c4bcb818590afc209ac22.setContent(html_baa2307fcbd5422283ac297ef4103612);
+        
+
+        marker_77f78a27d40e4b2b81be5b57394bb876.bindPopup(popup_dffd2ee5839c4bcb818590afc209ac22)
+        ;
+
+        
+    
+    
+            marker_77f78a27d40e4b2b81be5b57394bb876.bindTooltip(
+                `<div>
+                     Miasto: Boston,<br>Kliknij, aby uzyskać więcej informacji
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_22860b4c749741288dc1d12ab7aae94c = L.marker(
+                [40.713051, -74.007233],
+                {}
+            ).addTo(map_070eebcbdd4f4e1f9758139b87ad42cc);
+        
+    
+            var icon_10e0ae5c496e4258b5d3a3c5bce35f25 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "#FFFFFF", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_22860b4c749741288dc1d12ab7aae94c.setIcon(icon_10e0ae5c496e4258b5d3a3c5bce35f25);
+        
+    
+        var popup_b00f692cb94c4888940af6234b5793ba = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eeb06b106c7f45ddace3721e475f8996 = $(`<div id="html_eeb06b106c7f45ddace3721e475f8996" style="width: 100.0%; height: 100.0%;">Drużyna: New York Knicks,<br>Rok powstania: 1946,<br>Rok likwidacji: still exist,<br>Zakończyli na miejscu: 5th</div>`)[0];
+            popup_b00f692cb94c4888940af6234b5793ba.setContent(html_eeb06b106c7f45ddace3721e475f8996);
+        
+
+        marker_22860b4c749741288dc1d12ab7aae94c.bindPopup(popup_b00f692cb94c4888940af6234b5793ba)
+        ;
+
+        
+    
+    
+            marker_22860b4c749741288dc1d12ab7aae94c.bindTooltip(
+                `<div>
+                     Miasto: New  York,<br>Kliknij, aby uzyskać więcej informacji
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c61dce2de41e4a52a7c58a59144db6d7 = L.marker(
+                [37.779026200000004, -122.41990600000001],
+                {}
+            ).addTo(map_070eebcbdd4f4e1f9758139b87ad42cc);
+        
+    
+            var icon_89ce644e5c034a3ca9112a50f8138c8c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "#FFFFFF", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_c61dce2de41e4a52a7c58a59144db6d7.setIcon(icon_89ce644e5c034a3ca9112a50f8138c8c);
+        
+    
+        var popup_c4f031ba1e384f0b920dbf8683f44962 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5814b6eab2474871a4ecab982bdc3fe0 = $(`<div id="html_5814b6eab2474871a4ecab982bdc3fe0" style="width: 100.0%; height: 100.0%;">Drużyna: Philadelphia Warriors,<br>Rok powstania: 1946,<br>Rok likwidacji: still exist(remaned to Golden State Warriors),<br>Zakończyli na miejscu: 4th</div>`)[0];
+            popup_c4f031ba1e384f0b920dbf8683f44962.setContent(html_5814b6eab2474871a4ecab982bdc3fe0);
+        
+
+        marker_c61dce2de41e4a52a7c58a59144db6d7.bindPopup(popup_c4f031ba1e384f0b920dbf8683f44962)
+        ;
+
+        
+    
+    
+            marker_c61dce2de41e4a52a7c58a59144db6d7.bindTooltip(
+                `<div>
+                     Miasto: San Francisco,<br>Kliknij, aby uzyskać więcej informacji
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6a3b82f4e22c4259b066fca46d3e929b = L.marker(
+                [41.875561600000005, -87.6244212],
+                {}
+            ).addTo(map_070eebcbdd4f4e1f9758139b87ad42cc);
+        
+    
+            var icon_31a18b9a2915499c8bcedc365d6a7e0d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "#FFFFFF", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_6a3b82f4e22c4259b066fca46d3e929b.setIcon(icon_31a18b9a2915499c8bcedc365d6a7e0d);
+        
+    
+        var popup_1698aefba0484602b2b772ff97f76b93 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f3b14466d2ce49818508754b449441af = $(`<div id="html_f3b14466d2ce49818508754b449441af" style="width: 100.0%; height: 100.0%;">Drużyna: Chicago Stads,<br>Rok powstania: 1946,<br>Rok likwidacji: 1950,<br>Zakończyli na miejscu: 2nd</div>`)[0];
+            popup_1698aefba0484602b2b772ff97f76b93.setContent(html_f3b14466d2ce49818508754b449441af);
+        
+
+        marker_6a3b82f4e22c4259b066fca46d3e929b.bindPopup(popup_1698aefba0484602b2b772ff97f76b93)
+        ;
+
+        
+    
+    
+            marker_6a3b82f4e22c4259b066fca46d3e929b.bindTooltip(
+                `<div>
+                     Miasto: Chicago,<br>Kliknij, aby uzyskać więcej informacji
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0265d34c0fac460fb4fe16cc4c95b10a = L.marker(
+                [41.499656200000004, -81.6936813],
+                {}
+            ).addTo(map_070eebcbdd4f4e1f9758139b87ad42cc);
+        
+    
+            var icon_1cd9765d8e0f4bc2aa22e23129f85106 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "#FFFFFF", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_0265d34c0fac460fb4fe16cc4c95b10a.setIcon(icon_1cd9765d8e0f4bc2aa22e23129f85106);
+        
+    
+        var popup_99f58f5b3abb4e3b969938816616e6f8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e740e5fcff144bbeb0cef056f9455edb = $(`<div id="html_e740e5fcff144bbeb0cef056f9455edb" style="width: 100.0%; height: 100.0%;">Drużyna: Cleveland Rebels,<br>Rok powstania: 1946,<br>Rok likwidacji: 1947,<br>Zakończyli na miejscu: 6th</div>`)[0];
+            popup_99f58f5b3abb4e3b969938816616e6f8.setContent(html_e740e5fcff144bbeb0cef056f9455edb);
+        
+
+        marker_0265d34c0fac460fb4fe16cc4c95b10a.bindPopup(popup_99f58f5b3abb4e3b969938816616e6f8)
+        ;
+
+        
+    
+    
+            marker_0265d34c0fac460fb4fe16cc4c95b10a.bindTooltip(
+                `<div>
+                     Miasto: Cleveland,<br>Kliknij, aby uzyskać więcej informacji
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f54bd12e18f74d1ab5aceace5ebcada3 = L.marker(
+                [42.331550899999996, -83.04664029999999],
+                {}
+            ).addTo(map_070eebcbdd4f4e1f9758139b87ad42cc);
+        
+    
+            var icon_91ef9707170d429e89c0faaa71b04ebe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "#FFFFFF", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_f54bd12e18f74d1ab5aceace5ebcada3.setIcon(icon_91ef9707170d429e89c0faaa71b04ebe);
+        
+    
+        var popup_83a04fc9c95e421984d952c122123ff4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2d936699da324aa0bd6240d81cf68ef8 = $(`<div id="html_2d936699da324aa0bd6240d81cf68ef8" style="width: 100.0%; height: 100.0%;">Drużyna: Detroit Falcons,<br>Rok powstania: 1946,<br>Rok likwidacji: 1947,<br>Zakończyli na miejscu: 10th</div>`)[0];
+            popup_83a04fc9c95e421984d952c122123ff4.setContent(html_2d936699da324aa0bd6240d81cf68ef8);
+        
+
+        marker_f54bd12e18f74d1ab5aceace5ebcada3.bindPopup(popup_83a04fc9c95e421984d952c122123ff4)
+        ;
+
+        
+    
+    
+            marker_f54bd12e18f74d1ab5aceace5ebcada3.bindTooltip(
+                `<div>
+                     Miasto: Detroit,<br>Kliknij, aby uzyskać więcej informacji
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4f40d8df31c646a78f69c7be190931fb = L.marker(
+                [40.4416941, -79.99008609999998],
+                {}
+            ).addTo(map_070eebcbdd4f4e1f9758139b87ad42cc);
+        
+    
+            var icon_04475f14be7b4f6bb692cbc488309d18 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "#FFFFFF", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_4f40d8df31c646a78f69c7be190931fb.setIcon(icon_04475f14be7b4f6bb692cbc488309d18);
+        
+    
+        var popup_fbdfc5145f5f4495a8744e78fa011af7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b0b33177166c4887a476c40221553d42 = $(`<div id="html_b0b33177166c4887a476c40221553d42" style="width: 100.0%; height: 100.0%;">Drużyna: Pittsburgh Ironmen,<br>Rok powstania: 1946,<br>Rok likwidacji: 1947,<br>Zakończyli na miejscu: 11th</div>`)[0];
+            popup_fbdfc5145f5f4495a8744e78fa011af7.setContent(html_b0b33177166c4887a476c40221553d42);
+        
+
+        marker_4f40d8df31c646a78f69c7be190931fb.bindPopup(popup_fbdfc5145f5f4495a8744e78fa011af7)
+        ;
+
+        
+    
+    
+            marker_4f40d8df31c646a78f69c7be190931fb.bindTooltip(
+                `<div>
+                     Miasto: Pittsburgh,<br>Kliknij, aby uzyskać więcej informacji
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_30f7cb672eed4e82bdd5dfe1dde2b030 = L.marker(
+                [41.8239891, -71.4128343],
+                {}
+            ).addTo(map_070eebcbdd4f4e1f9758139b87ad42cc);
+        
+    
+            var icon_f18b185c11364d7fa52fcfbbaed6345e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "#FFFFFF", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_30f7cb672eed4e82bdd5dfe1dde2b030.setIcon(icon_f18b185c11364d7fa52fcfbbaed6345e);
+        
+    
+        var popup_359ec16ba00e49979bfc8b25d3577ada = L.popup({"maxWidth": "100%"});
+
+        
+            var html_734244049bdd467281e66fc0cf640aea = $(`<div id="html_734244049bdd467281e66fc0cf640aea" style="width: 100.0%; height: 100.0%;">Drużyna: Providence Steamrollers,<br>Rok powstania: 1946,<br>Rok likwidacji: 1949,<br>Zakończyli na miejscu: 7th</div>`)[0];
+            popup_359ec16ba00e49979bfc8b25d3577ada.setContent(html_734244049bdd467281e66fc0cf640aea);
+        
+
+        marker_30f7cb672eed4e82bdd5dfe1dde2b030.bindPopup(popup_359ec16ba00e49979bfc8b25d3577ada)
+        ;
+
+        
+    
+    
+            marker_30f7cb672eed4e82bdd5dfe1dde2b030.bindTooltip(
+                `<div>
+                     Miasto: Providence,<br>Kliknij, aby uzyskać więcej informacji
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0f2b3df4c4934364990b5e391169197d = L.marker(
+                [38.6264256, -90.1995853],
+                {}
+            ).addTo(map_070eebcbdd4f4e1f9758139b87ad42cc);
+        
+    
+            var icon_3bb10ff065504a6a8a4ce8f0619abfd7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "#FFFFFF", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_0f2b3df4c4934364990b5e391169197d.setIcon(icon_3bb10ff065504a6a8a4ce8f0619abfd7);
+        
+    
+        var popup_2919cc39873e4ec69ba4306421f8de6e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1bd32993700c4157a70705bfc8b4a038 = $(`<div id="html_1bd32993700c4157a70705bfc8b4a038" style="width: 100.0%; height: 100.0%;">Drużyna: St.Louis Bombers,<br>Rok powstania: 1946,<br>Rok likwidacji: 1950,<br>Zakończyli na miejscu: 3rd</div>`)[0];
+            popup_2919cc39873e4ec69ba4306421f8de6e.setContent(html_1bd32993700c4157a70705bfc8b4a038);
+        
+
+        marker_0f2b3df4c4934364990b5e391169197d.bindPopup(popup_2919cc39873e4ec69ba4306421f8de6e)
+        ;
+
+        
+    
+    
+            marker_0f2b3df4c4934364990b5e391169197d.bindTooltip(
+                `<div>
+                     Miasto: St.Louis,<br>Kliknij, aby uzyskać więcej informacji
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_17361d64dace40079d399dd51e865039 = L.marker(
+                [43.6534817, -79.38393470000001],
+                {}
+            ).addTo(map_070eebcbdd4f4e1f9758139b87ad42cc);
+        
+    
+            var icon_d6d3ff70fb7d4bcabf15accab0d8e6d8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "#FFFFFF", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_17361d64dace40079d399dd51e865039.setIcon(icon_d6d3ff70fb7d4bcabf15accab0d8e6d8);
+        
+    
+        var popup_9045076cd91143a7b6ea4c2b3adb1625 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_23a1bbb029564ddd8e4c421534837766 = $(`<div id="html_23a1bbb029564ddd8e4c421534837766" style="width: 100.0%; height: 100.0%;">Drużyna: Toronto Huskies,<br>Rok powstania: 1946,<br>Rok likwidacji: 1947,<br>Zakończyli na miejscu: 9th</div>`)[0];
+            popup_9045076cd91143a7b6ea4c2b3adb1625.setContent(html_23a1bbb029564ddd8e4c421534837766);
+        
+
+        marker_17361d64dace40079d399dd51e865039.bindPopup(popup_9045076cd91143a7b6ea4c2b3adb1625)
+        ;
+
+        
+    
+    
+            marker_17361d64dace40079d399dd51e865039.bindTooltip(
+                `<div>
+                     Miasto: Toronto,<br>Kliknij, aby uzyskać więcej informacji
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4ccab354a59545c7809514444d7813fd = L.marker(
+                [38.89503679999999, -77.0365427],
+                {}
+            ).addTo(map_070eebcbdd4f4e1f9758139b87ad42cc);
+        
+    
+            var icon_8cf427bb6b514e01bbe3fcf720d55695 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "trophy", "iconColor": "#FFFFFF", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4ccab354a59545c7809514444d7813fd.setIcon(icon_8cf427bb6b514e01bbe3fcf720d55695);
+        
+    
+        var popup_778aff3ec57b459f9136fbf0be71a1d3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f7bb1bd9f9f94fecbe46acecd5646451 = $(`<div id="html_f7bb1bd9f9f94fecbe46acecd5646451" style="width: 100.0%; height: 100.0%;">Drużyna: Washington Capitols,<br>Rok powstania: 1946,<br>Rok likwidacji: 1951,<br>Zakończyli na miejscu: 1st</div>`)[0];
+            popup_778aff3ec57b459f9136fbf0be71a1d3.setContent(html_f7bb1bd9f9f94fecbe46acecd5646451);
+        
+
+        marker_4ccab354a59545c7809514444d7813fd.bindPopup(popup_778aff3ec57b459f9136fbf0be71a1d3)
+        ;
+
+        
+    
+    
+            marker_4ccab354a59545c7809514444d7813fd.bindTooltip(
+                `<div>
+                     Miasto: Washington D.C.,<br>Kliknij, aby uzyskać więcej informacji
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f4a070d348354e68857f9b6d67ea2c4b = L.marker(
+                [36.0, -70.0],
+                {}
+            ).addTo(map_070eebcbdd4f4e1f9758139b87ad42cc);
+        
+    
+            var div_icon_604afe75f88e42f1b9dcc80c752fc1c0 = L.divIcon({"className": "empty", "html": "\u003csvg height=\"105\" width=\"230\"\u003e\u003ctext x=\"10\" y=\"30\" font-size=25px font-style=\"italic\" fill=\"black\"\u003eMapa miast z\u003c/text\u003e\u003ctext x=\"10\" y=\"55\" font-size=25px font-style=\"italic\" fill=\"black\"\u003edru\u017cynami w\u003c/text\u003e\u003ctext x=\"10\" y=\"80\" font-size=25px font-style=\"italic\" fill=\"black\"\u003esezonie 1946-1947\u003c/text\u003e\u003c/svg\u003e"});
+            marker_f4a070d348354e68857f9b6d67ea2c4b.setIcon(div_icon_604afe75f88e42f1b9dcc80c752fc1c0);
+        
+</script>
